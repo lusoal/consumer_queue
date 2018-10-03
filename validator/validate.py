@@ -2,6 +2,7 @@ from ast import literal_eval
 
 def data_quality(message):
     message = message.lower()
+    #print (message)
     message = literal_eval(message)
     
     #Redirecionar para Log print (type(message))
