@@ -7,8 +7,12 @@ from database.mysql_insert import *
 
 def callback(ch, method, properties, body):
     #tudo dentro do Callback pois é um Worker
+    body = body.decode("utf-8")
+    #decript byte to string
+    
     message_formatted = data_quality(body)
     querie = define_querie(message_formatted)
+    
     print (querie)
     #inserir no database
 
