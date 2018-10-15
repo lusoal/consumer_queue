@@ -13,7 +13,7 @@ def callback(ch, method, properties, body):
     message_formatted = data_quality(body)
     querie = define_querie(message_formatted)
     
-    print (querie)
+    sql_insert_into_db(querie)
     #inserir no database
 
 def main():

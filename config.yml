@@ -8,7 +8,7 @@ rabbit:
   user: 'guest'
   pass: 'guest'
 database:
-  host:
-  user:
-  pass:
-  table_name: 'validacao'
+  host: 'instanciabiusjt.c0arz9cwotau.us-east-1.rds.amazonaws.com'
+  user: 
+  pass: 
+  schema: 'big_data'
