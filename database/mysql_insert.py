@@ -51,8 +51,9 @@ def sql_insert_into_db(query):
             result = result_proxy.fetchall()
             return result
     except Exception as e:
-        print  e
+        print  (e)
         if '_mysql_exceptions.IntegrityError' in str(e):
-            return "Already here"
+            return False
+            print ("Ja inserido")
         else:
             return False
