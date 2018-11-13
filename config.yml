@@ -3,12 +3,12 @@ aws:
 file:
   path: 'newcsv.csv'
 rabbit:
-  host: 'localhost'
+  host: '23.22.147.214'
   port: 5672
-  user: 'guest'
-  pass: 'guest'
+  user: ''
+  pass: ''
 database:
-  host: 'instanciabiusjt.c0arz9cwotau.us-east-1.rds.amazonaws.com'
-  user: 
+  host: ''
+  user: saojudasbi
   pass: 
   schema: 'big_data'

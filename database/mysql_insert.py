@@ -8,12 +8,16 @@ def define_querie(value):
     table_name = None
     columns = ""
     #verificar em qual tabela ira inserir o dado parseado
-    if "clientes" in value['table_name'][1]:
-        table_name = "clientes"
-    elif "aeroporto" in value['table_name'][1]:
-        table_name = "aeroportos"
+    if "clientesparceiros" in value['table_name'][1]:
+        table_name = "clientesparceiros"
+    elif "quantidadeparceiros" in value['table_name'][1]:
+        table_name = "quantidadeparceiros"
+    elif "vendaparceiros" in value['table_name'][1]:
+        table_name = "vendaparceiros"
+    elif "clientespotenciais" in value['table_name'][1]:
+        table_name = "clientespotenciais"
     else:
-        table_name = "transacoes"
+        table_name = "aeroportos"
     value.pop('table_name', None)
     for k, v in value.items():
         #remover \n do cabecalho
